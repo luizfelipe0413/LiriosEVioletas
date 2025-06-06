@@ -1,1 +1,83 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root{
+    /* Cores */
+    --cor01:#CE294C;
+    --cor02:#F48476;
+    --cor03:#588730;
+    --cor04:#A4F852;
+    --cor05:#976D4C;
+    --cor06:#634530;
+    /* Fontes */
+    --font01:"EB Garamond", serif;    
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: 0; 
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: auto;
+}
+header{
+    height: auto;
+    padding: 10px 20px;
+
+    background-color: var(--cor02);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav span{
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+
+}
+.menuitem a{
+    text-decoration: none;
+    color: var(--cor06);
+    
+}
+.menuitem a:hover{
+    color: var(--cor01);
+}
+.menuimg img{
+    width: 160px;
+}
+.hearticon{
+    background-image: url(imagens/iconheart.png);
+    background-size: cover;
+}
+.hearticon:hover{
+    background-image: url(imagens/iconheart1.png);
+}
+.carticon{
+    background-image: url(imagens/iconcart.png);
+    background-size: cover;
+}
+.carticon:hover{
+    background-image: url(imagens/iconcart2.png);
+}
+.loginicon{
+    background-image: url(imagens/iconlogin.png);
+    background-size: cover;
+}
+.loginicon:hover{
+    background-image: url(imagens/iconlogin1.png);
+}
+.menuicon a{
+    width: 30px; 
+    height: 30px;  
+    margin: 0px 5px;
+}
