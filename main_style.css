@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 :root{
     /* Cores */
     --cor01:#CE294C;
@@ -10,8 +12,10 @@
     --cor04:#A4F852;
     --cor05:#976D4C;
     --cor06:#634530;
+    --cor07:#F1BD5D;
     /* Fontes */
-    --font01:"EB Garamond", serif;    
+    --font01:"EB Garamond", serif;  
+    --font02:"Poppins", sans-serif;  
 }
 *{
     box-sizing: border-box;
@@ -23,9 +27,12 @@ html, body{
     width: 100%;
     height: auto;
 }
+
+/* -=-=-=-Header-=-=-=-=- */
 header{
     height: auto;
-    padding: 10px 20px;
+    position: sticky;
+    top: 0;
 
     background-color: var(--cor02);
 }
@@ -41,19 +48,17 @@ nav span{
     align-items: center;
     justify-content: center;
 }
-.menuitem{
-
-}
 .menuitem a{
     text-decoration: none;
     color: var(--cor06);
-    
+    font-family: var(--font01);
+    font-size: 1.5em;
 }
 .menuitem a:hover{
     color: var(--cor01);
 }
 .menuimg img{
-    width: 160px;
+    width: 150px;
 }
 .hearticon{
     background-image: url(imagens/iconheart.png);
@@ -78,6 +83,75 @@ nav span{
 }
 .menuicon a{
     width: 30px; 
-    height: 30px;  
+    height: 30px;
     margin: 0px 5px;
 }
+/* -=-=-=-Header-=-=-=-=- */
+
+/* -=-=-=-Footer-=-=-=-=- */
+footer{
+    height: auto;
+}
+#section1{
+    background-color: var(--cor05);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+.cardfooter{
+    width: 240px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.cardfooter p{
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    font-family: var(--font02);
+    font-size: 1.2em;
+    color: var(--cor07);
+    text-shadow: 1px 1px 1px black;
+
+    padding-bottom: 2px;
+}
+.cardfooter a{
+    font-family: var(--font02);
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--cor07);
+    text-shadow: 1px 1px 1px black;
+    padding-top: 5px;
+}
+.cardfooter a:hover{
+    color: var(--cor01);
+    transition: color 0.1s ease;
+}
+.cardfooter div{
+    display: flex;
+    justify-content: space-around;
+}
+.cardfooter img{
+    width: 40px;
+    transition: 0.2s;
+}
+.cardfooter img:hover{
+    transform: scale(1.1);
+    transition: transform ease 0.2s;
+}
+#section2{
+    height: auto;
+    background-color: var(--cor06);
+    text-align: center;
+    padding: 10px;
+}
+#section2 span{
+    color: #F1BD5D;
+    text-shadow: 1px 1px 3px black;
+    font-family: var(--font01);
+    font-size: 1.1em;
+}
+/* -=-=-=-Footer-=-=-=-=- */
