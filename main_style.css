@@ -13,6 +13,7 @@
     --cor05:#976D4C;
     --cor06:#634530;
     --cor07:#F1BD5D;
+    --cor08:#E8EAED;
     /* Fontes */
     --font01:"EB Garamond", serif;  
     --font02:"Poppins", sans-serif;  
@@ -29,12 +30,14 @@ html, body{
 }
 
 /* -=-=-=-Header-=-=-=-=- */
+
 header{
     height: auto;
     position: sticky;
     top: 0;
 
     background-color: var(--cor02);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.500);
 }
 nav{
     display: flex;
@@ -52,7 +55,7 @@ nav span{
     text-decoration: none;
     color: var(--cor06);
     font-family: var(--font01);
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .menuitem a:hover{
     color: var(--cor01);
@@ -88,28 +91,64 @@ nav span{
 }
 /* -=-=-=-Header-=-=-=-=- */
 
-/* -=-=-=-Main -> InformationSection-=-=-=-=- */
-.InformationSection{
-    height: 80px;
+/* -=-=-=-Main -> Painel=-=-=-=- */
+.painelinfos{
+    height: 400px;
+    overflow: hidden;
     background-color: var(--cor01);
+    
+}
+.painelinfos img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+}
+/* -=-=-=-Main -> Painel-=-=-=-=- */
+
+/* -=-=-=-Main -> InformationSection-=-=-=-=- */
+.informationsection{
+    height: 80px;
     padding: 10px;
+    background-color: var(--cor01);
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.InformationSection div{
-    ;
+.informationsection div{
+    display: flex;
+    align-items: center;
+    cursor: default;
 }
+.informationsection img{
+    width: 60px;
+}
+.informationsection h1{
+    font-family: var(--font02);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px black;
+    color: var(--cor08);
+
+    padding-left: 10px;   
+}
+
 /* -=-=-=-Main -> InformationSection-=-=-=-=- */
 
 /* -=-=-=-Footer-=-=-=-=- */
 footer{
     height: auto;
 }
-#section1{
-    background-color: var(--cor05);
+#footerinfos{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
     padding: 20px;
+    background-color: var(--cor05);
 }
 .cardfooter{
     width: 240px;
@@ -154,13 +193,13 @@ footer{
     transform: scale(1.1);
     transition: transform ease 0.2s;
 }
-#section2{
+#footerendinfos{
     height: auto;
     background-color: var(--cor06);
     text-align: center;
     padding: 10px;
 }
-#section2 span{
+#footerendinfos span{
     color: #F1BD5D;
     text-shadow: 1px 1px 3px black;
     font-family: var(--font01);
