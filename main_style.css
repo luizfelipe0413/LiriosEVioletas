@@ -56,6 +56,7 @@ nav span{
     color: var(--cor06);
     font-family: var(--font01);
     font-size: 1.6em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 .menuitem a:hover{
     color: var(--cor01);
@@ -111,8 +112,7 @@ nav span{
     height: 80px;
     padding: 10px;
     background-color: var(--cor01);
-    
-    
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -137,6 +137,39 @@ nav span{
 }
 
 /* -=-=-=-Main -> InformationSection-=-=-=-=- */
+
+/* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
+.flortipo{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: var(--cor04);
+    padding: 10px;
+}
+.flortipo a{
+    display: flex;
+    flex-flow: column;
+
+    text-decoration: none;
+}
+.flortipo img{
+    background-color: white;
+    object-fit: cover;
+    border-radius: 50%;
+    border: var(--cor03) solid 5px;
+    width: 80px;
+    height: 80px;
+}
+.flortipo p{
+    text-align: center;
+    font-family: var(--font02);
+    color: var(--cor06);
+
+}
+
+/* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
 
 /* -=-=-=-Footer-=-=-=-=- */
 footer{
