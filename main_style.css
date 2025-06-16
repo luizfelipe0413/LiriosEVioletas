@@ -38,6 +38,7 @@ header{
 
     background-color: var(--cor02);
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.500);
+    z-index: 1;
 }
 nav{
     display: flex;
@@ -151,25 +152,54 @@ nav span{
 .flortipo a{
     display: flex;
     flex-flow: column;
+    width: 80px;
 
     text-decoration: none;
+    transition: all ease 180ms;
+}
+.flortipo a:hover{
+    transform: scale(1.1);
+    
 }
 .flortipo img{
     background-color: white;
     object-fit: cover;
     border-radius: 50%;
-    border: var(--cor03) solid 5px;
+    border: var(--cor03) solid 4px;
     width: 80px;
     height: 80px;
+
+    transition: all ease 180ms;
+}
+.flortipo a:hover img{
+    box-shadow: 0px 0px 4px var(--cor06);
 }
 .flortipo p{
     text-align: center;
     font-family: var(--font02);
     color: var(--cor06);
-
+    text-shadow: 1px 1px 1px var(--cor03);
 }
 
 /* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
+
+/* -=-=-=-Main -> Produtos Geral-=-=-=-=- */
+.produtosbg{
+    background-image: url(imagens/bgplantas0.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    height: 5000px;
+
+    display: flex;
+    justify-content: center;
+}
+.produtosgeral{
+    width: 70%;
+    height: 97%;
+    background-color: var(--cor03);
+}
+
+/* -=-=-=-Main -> Produtos Geral-=-=-=-=- */
 
 /* -=-=-=-Footer-=-=-=-=- */
 footer{
