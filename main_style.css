@@ -200,7 +200,7 @@ nav span{
 }
 .produtosamostra{
     width: 100%;
-    height: 200px;
+    height: 300px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -219,7 +219,32 @@ nav span{
     border-color: var(--cor08);
     background-color: var(--cor08);
 }
-#produtosbuques{
+.painelprodutos{
+    position: relative;
+    
+}
+.painelprodutos img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+.painelprodutos h1{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: var(--font02);
+    font-size: 2em;
+    color: var(--cor07);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+    text-decoration: underline;
+    text-decoration-color: var(--cor08);
+    
+}
+.produtosbuques{
      
 }
 /* -=-=-=-Main -> Produtos Geral-=-=-=-=- */
