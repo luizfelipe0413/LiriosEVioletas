@@ -37,7 +37,35 @@ const arranjos = [
         imagem:"imagens/arranjoorquideas.jpg"
     },
     {
-        
+        nome:"Arranjo Brilho da Primavera",
+        preco:49.90,
+        imagem:"imagens/arranjotulipas.jpg"
+    },
+    {
+        nome:"Crisantemos Elegantes",
+        preco: 69.90,
+        imagem:"imagens/arranjocrisantemopompomfuji.jpg"
     }
 ]
-
+const maisvendidos = [
+    {
+        nome:"Buquê Rosas Raios de Sol",
+        preco:159.99,
+        imagem:"imagens/buquerosalaranja.jpg"
+    },
+    {
+        nome:"Jarro de Rosas Sortidas",
+        preco:179.99,
+        imagem:"imagens/jarrorosassortidas.jpg"
+    },
+    {
+        nome:"Cesto de Rosas Raios de Sol",
+        preco:199.90,
+        imagem:"imagens/cestoderosaslaranja.jpg"
+    },
+    {
+        nome:"Cesto de Rosas Românticas",
+        preco:199.90,
+        imagem:"imagens/cestoderosas.jpg"
+    }
+]

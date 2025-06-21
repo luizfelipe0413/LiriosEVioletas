@@ -221,27 +221,32 @@ nav span{
 }
 .painelprodutos{
     position: relative;
-    
+    display: flex;
+    justify-content: center;
 }
 .painelprodutos img{
-    width: 100%;
+    width: 95%;
     height: 400px;
     overflow: hidden;
     object-fit: cover;
+    border-radius: 40px;
 
+    transition: all ease 200ms;
 }
 .painelprodutos h1{
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: default;
     
-    font-family: var(--font02);
-    font-size: 2em;
-    color: var(--cor07);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+    font-family: var(--font01);
+    font-size: 3em;
+    font-style: italic;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.500);
     text-decoration: underline;
     text-decoration-color: var(--cor08);
+    color: var(--cor07);
     
 }
 .produtosbuques{
