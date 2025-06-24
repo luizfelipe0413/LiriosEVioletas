@@ -68,4 +68,45 @@ const maisvendidos = [
         preco:199.90,
         imagem:"imagens/cestoderosas.jpg"
     }
-]
+];
+/* =-=-=-=-=Produtos Mais Vendidos=-=-=-=-= */
+const containermaisvendidos = document.getElementsByClassName("produtosmaisvendidos")[0]
+maisvendidos.forEach(produto => {
+    const div = document.createElement("div")
+    div.classList.add("produtoscard")
+    
+    div.innerHTML = `
+        <img src="${produto.imagem}" alt="${produto.nome}">
+        <h1>${produto.nome}</h1>
+        <p>${produto.preco}</p>
+    `;
+    containermaisvendidos.appendChild(div)
+})
+/* =-=-=-=-=Produtos Mais Vendidos-=-=-=-= */
+
+/* =-=-=-=-=Produtos Buquês=-=-=-=-= */
+const containerbuques = document.getElementsByClassName("produtosbuques")[0]
+buques.forEach(produto => {
+    const div = document.createElement("div")
+    div.classList.add("produtoscard")
+
+    div.innerHTML = `
+        <img src="${produto.imagem}" alt="${produto.nome}">
+        <h1>${produto.nome}</h1>
+        <p>${produto.preco}</p>
+    `
+    containerbuques.appendChild(div)
+})
+
+const containerarranjos = document.getElementsByClassName("produtosarranjos")[0]
+arranjos.forEach(produto => {
+    const div = document.createElement("div")
+    div.classList.add("produtoscard")
+
+    div.innerHTML = `
+        <img src="${produto.imagem}" alt="${produto.nome}">
+        <h1>${produto.nome}</h1>
+        <p>${produto.preco}</p>
+    `
+    containerarranjos.appendChild(div)
+})
