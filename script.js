@@ -2,7 +2,7 @@ const buques = [
     {
         nome:"Raio de sol",
         preco: 139.99,
-        imagem: "imagens/buquegirassoisgipsofila.jpg"
+        imagem: "imagens/buquegirassol.jpg"
     },
     {
         nome:"Sol de Outono",
