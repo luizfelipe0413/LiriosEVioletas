@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    /* Cores */
+    --cor01:#CE294C;
+    --cor02:#F48476;
+    --cor03:#588730;
+    --cor04:#A4F852;
+    --cor05:#976D4C;
+    --cor06:#634530;
+    --cor07:#F1BD5D;
+    --cor08:#E8EAED;
+    /* Fontes */
+    --font01:"EB Garamond", serif;  
+    --font02:"Poppins", sans-serif;  
+}
+@media screen and (max-width: 768px) {
+.menuitem{
+    display: none;
+}
+.menuimg img{
+    width: 100px;
+}
+.menuicon{
+    display: none;
+}
+
+.painelinfos img{
+    height: 200px;
+}
+
+.flortipo{
+    
+    overflow-x: scroll;
+}
+.flortipo::-webkit-scrollbar{
+    display: none;
+}
+
+.produtosbg{
+    background-image: none;
+    background-color: var(--cor03);
+}
+.produtosgeral{
+    width: 100vw;
+
+}
+.produtos{
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.produtoscard{
+
+}
+
+#footerinfos{
+    flex-flow: column;
+    
+    justify-content: left;
+    gap: 30px;
+    padding: 10px;
+}
+.cardfooter{
+    width: 100%;
+}
+}
