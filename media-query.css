@@ -23,7 +23,6 @@
 nav{
     justify-content: space-between;
     padding: 5px;
-    
 }
 .menuitem{
     display: none;
@@ -35,35 +34,48 @@ nav{
     display: flex;
     width: 40px;
     height: 40px;
+
     background-image: url(imagens/iconmenu.svg);
     background-color: var(--cor02);
     background-size: cover;
-    opacity: 0.5;
     text-decoration: none;
     border: none;
-
+    opacity: 0.5;
 }
 .menuicon.open{
     background-image: url(imagens/iconcancel.svg);
 }
 .menumobile{
-    display: none;
-}
-.menumobile.open{
     height: 100vh;
     width: 100vw;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--cor02);
+    transition: opacity 100ms ease-in-out;
+}
+.menumobile.open{
+    opacity: 1;
+    pointer-events: auto;
 }
 .menumobileitem a{
+    display: block;
+
+    text-align: left;
     text-decoration: none;
+    font-size: 1.6em;
     color: var(--cor06);
     font-family: var(--font01);
-    font-size: 1.6em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     padding: 10px;
+    border-bottom: 2px solid var(--cor06);
+}
+.menumobileitem a:active{
+    background-color: var(--cor06);
+    color: var(--cor02);
 }
 .painelinfos img{
     height: 200px;
@@ -136,7 +148,6 @@ nav{
 /* -=-=-=-Footer-=-=-=-=- */
 #footerinfos{
     flex-flow: column;
-    
     justify-content: left;
     gap: 30px;
     padding: 10px;

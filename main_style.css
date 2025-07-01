@@ -18,14 +18,12 @@
     --font01:"EB Garamond", serif;  
     --font02:"Poppins", sans-serif;  
 }
-
 /* -=-=-=-Global-=-=-=-=- */
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;   
     margin: 0; 
     padding: 0;
-
 }
 html, body{
     width: 100%;
@@ -52,6 +50,9 @@ nav span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.menumobile{
+    display: none;
 }
 .menuitem a{
     text-decoration: none;
@@ -135,7 +136,6 @@ nav span{
     font-style: italic;
     font-size: 1.4em;
     text-shadow: 1px 1px 1px black;
-    
     color: var(--cor08);
 
     padding-left: 10px;   
@@ -161,18 +161,18 @@ nav span{
     width: 80px;
 
     text-decoration: none;
-    transition: all ease 180ms;
+    transition: all ease 130ms;
 }
 .flortipo a:hover{
     transform: scale(1.1);
 }
 .flortipo img{
-    background-color: white;
-    object-fit: cover;
-    border-radius: 50%;
-    border: var(--cor03) solid 4px;
     width: 80px;
     height: 80px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 50%;
+    border: var(--cor03) solid 4px;
 
     transition: all ease 180ms;
 }
@@ -192,7 +192,6 @@ nav span{
     background-image: url(imagens/bgplantas.jpg);
     background-repeat: repeat;
     background-size: contain;
-    
     display: flex;
     justify-content: center;
 }
@@ -223,10 +222,8 @@ nav span{
 
     margin: 20px 0px;
     padding: 10px;
-    
     border-radius: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.400);
-
     background-color: var(--cor02);
     
     transition: transform ease 280ms;
@@ -259,6 +256,7 @@ nav span{
     width: 100%;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     padding-top: 10px
 }
@@ -285,7 +283,7 @@ nav span{
 .painelprodutos img{
     width: 95%;
     height: 400px;
-    /* overflow: hidden; */
+
     object-fit: cover;
     border-radius: 40px;
 
@@ -296,8 +294,8 @@ nav span{
     bottom: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: default;
     
+    cursor: default;
     font-family: var(--font01);
     font-size: 3em;
     font-style: italic;
@@ -305,7 +303,6 @@ nav span{
     text-decoration: underline;
     text-decoration-color: var(--cor08);
     color: var(--cor07);
-    
 }
 /* -=-=-=-Main -> Produtos Geral-=-=-=-=- */
 
@@ -315,6 +312,7 @@ nav span{
     flex-flow: row nowrap;
     justify-content: center;
     gap: 30px;
+
     padding: 20px;
     background-color: var(--cor05);
 }
