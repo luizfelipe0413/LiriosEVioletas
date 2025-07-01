@@ -19,6 +19,12 @@
     --font02:"Poppins", sans-serif;  
 }
 @media screen and (max-width: 768px) {
+/* -=-=-=-Header-=-=-=-=- */
+nav{
+    justify-content: space-between;
+    padding: 5px;
+    
+}
 .menuitem{
     display: none;
 }
@@ -26,12 +32,44 @@
     width: 100px;
 }
 .menuicon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-image: url(imagens/iconmenu.svg);
+    background-color: var(--cor02);
+    background-size: cover;
+    opacity: 0.5;
+    text-decoration: none;
+    border: none;
+
+}
+.menuicon.open{
+    background-image: url(imagens/iconcancel.svg);
+}
+.menumobile{
     display: none;
 }
-
+.menumobile.open{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.menumobileitem a{
+    text-decoration: none;
+    color: var(--cor06);
+    font-family: var(--font01);
+    font-size: 1.6em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    padding: 10px;
+}
 .painelinfos img{
     height: 200px;
 }
+/* -=-=-=-Header-=-=-=-=- */
+
 /* TEMPORARIO */
 .informationsection{
     display: none;
@@ -42,10 +80,17 @@
 .flortipo{
     justify-content: start;
     overflow-x: scroll;
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 .flortipo::-webkit-scrollbar{
     display: none;
+}
+.flortipo a{
+    width: 70px;
+}
+.flortipo img{
+    width: 70px;
+    height: 70px;
 }
 /* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
 
@@ -56,7 +101,6 @@
 }
 .produtosgeral{
     width: 100vw;
-
 }
 .produtos{
     flex-wrap: wrap;
@@ -65,9 +109,7 @@
 }
 .produtoscard{
     width: calc(50% - 20px);
-    
     margin: 10px 0px;
-    
     padding: 5px;
 }
 .produtoscard:hover{

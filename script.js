@@ -110,3 +110,12 @@ arranjos.forEach(produto => {
     `
     containerarranjos.appendChild(div)
 })
+
+function abrirMenu(){
+    const menuicon = document.querySelector(".menuicon")
+    const menumobile = document.querySelector(".menumobile") 
+    
+    menumobile.classList.toggle("open")
+
+    menuicon.classList.toggle("open")
+}

@@ -18,6 +18,8 @@
     --font01:"EB Garamond", serif;  
     --font02:"Poppins", sans-serif;  
 }
+
+/* -=-=-=-Global-=-=-=-=- */
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;   
@@ -29,8 +31,9 @@ html, body{
     width: 100%;
     height: auto;
 }
-/* -=-=-=-Header-=-=-=-=- */
+/* -=-=-=-Global-=-=-=-=- */
 
+/* -=-=-=-Header-=-=-=-=- */
 header{
     height: auto;
     position: sticky;
@@ -63,6 +66,9 @@ nav span{
 .menuimg img{
     width: 150px;
 }
+.menuicon{
+    display: none;
+}
 .hearticon{
     background-image: url(imagens/iconheart.png);
     background-size: cover;
@@ -84,7 +90,7 @@ nav span{
 .loginicon:hover{
     background-image: url(imagens/iconlogin1.png);
 }
-.menuicon a{
+.headericon a{
     width: 30px; 
     height: 30px;
     margin: 0px 5px;
@@ -114,7 +120,6 @@ nav span{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 .informationsection div{
     display: flex;
@@ -135,7 +140,6 @@ nav span{
 
     padding-left: 10px;   
 }
-
 /* -=-=-=-Main -> InformationSection-=-=-=-=- */
 
 /* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
@@ -153,6 +157,7 @@ nav span{
 .flortipo a{
     display: flex;
     flex-flow: column;
+    align-items: center;
     width: 80px;
 
     text-decoration: none;
@@ -180,7 +185,6 @@ nav span{
     color: var(--cor06);
     text-shadow: 1px 1px 1px var(--cor03);
 }
-
 /* -=-=-=-Main -> Tipos de Flores-=-=-=-=- */
 
 /* -=-=-=-Main -> Produtos Geral-=-=-=-=- */
